@@ -1,0 +1,80 @@
+body {
+  background-color: gray;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+section {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.purple-p,
+.green-p,
+.orange-p {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+section.green-p:hover {
+  transform: scale(1.5);
+  background-color: lightgreen;
+  z-index: 4;
+}
+
+section.purple-p:hover {
+  transform: scale(1.5);
+  background-color: rgb(203, 119, 203);
+  z-index: 4;
+}
+
+section.orange-p:hover {
+  transform: scale(1.5);
+  background-color: rgb(233, 169, 105);
+  z-index: 4;
+}
+
+p {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+.orange-p {
+  background-color: rgb(233, 169, 105);
+  transform: rotate(4deg);
+  transform-origin: 0% 50%;
+}
+
+.purple-p {
+  background-color: rgb(203, 119, 203);
+  transform: rotate(10deg);
+  transform-origin: 0% 50%;
+}
+
+.green-p {
+  background-color: lightgreen;
+  transform: rotate(352deg);
+  transform-origin: 50% 0%;
+}
